@@ -31,7 +31,7 @@ Proiect educațional realizat ca exercițiu practic pentru cursurile de **Algebr
 -Interfață Python
 
 ## License
-This project is licensed under the MIT License - see the [linear-algebra-library](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🧠 Exemple
 ```python
