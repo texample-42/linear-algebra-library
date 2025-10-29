@@ -30,6 +30,9 @@ Proiect educațional realizat ca exercițiu practic pentru cursurile de **Algebr
 -Optimizări pentru performanță
 -Interfață Python
 
+## License
+This project is licensed under the MIT License - see the [linear-algebra-library](LICENSE) file for details.
+
 ## 🧠 Exemple
 ```python
 from src.matrix import Matrix
@@ -40,5 +43,4 @@ B = Matrix([[5,6],[7,8]])
 print("A + B:")
 print(A.add(B))
 
-## License
-This project is licensed under the MIT License - see the [linear-algebra-library](LICENSE) file for details.
+
