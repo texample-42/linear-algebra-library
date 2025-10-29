@@ -1,2 +1,2 @@
 # linear-algebra-library
-Mini biblioteca de operatii de matrici 
+O biblioteca de operatii algebrice in curs de actualizare
