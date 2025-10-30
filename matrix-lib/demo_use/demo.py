@@ -31,3 +31,6 @@ print(A.trace())
 
 print("\nMatrice identitate de dimensiune c")
 print(Matrix.identity(c))
+
+print("\nMatrice triunghiulara superioara A")
+print(A.toUpper())
