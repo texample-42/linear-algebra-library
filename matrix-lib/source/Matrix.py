@@ -104,6 +104,7 @@ class Matrix:
         """
         A=[row[:] for row in self.data]
         #se copie matricea initiala
+        swaps=0
         for i in range(self.row):
             if A[i][i]==0:
                 #tratam cazul daca pivotul este 0
@@ -111,6 +112,7 @@ class Matrix:
                     #cautam un pivot diferit de 0 ca sa interschimbam liniile
                     if A[k][i]!=0:
                         A[i],A[k]=A[k],A[i]
+                        swaps+=1
                         break
                 else:
                     continue
@@ -120,4 +122,42 @@ class Matrix:
                 factor=A[j][i]/A[i][i]
                 for k in range(i,self.cols):
                     A[j][k]=A[j][k]-factor*A[i][k]
-        return Matrix(A)
+        return Matrix(A), swaps
+
+    def  toLower(self):
+        """
+        Returneaza matricea inferior triunghiulara
+        """
+        swaps=0
+        A=[row[:] for row in self.data]
+        # se face copierea matrcii initiale
+        for i in range(self.row-1, 0,-1 ):
+            if A[i][i]==0:
+                #tratam cazul daca pivotul este 0
+                for k in range(i-1,-1,-1):
+                    #cautam un pivot diferit de 0 ca sa interschimbam liniile
+                    if A[k][i]!=0:
+                        A[i],A[k]=A[k],A[i]
+                        swaps+=1
+                        break
+                else:
+                    continue
+
+            for j in range(i - 1, -1,-1):
+                # facem reducerea pe termeni
+                factor = A[j][i] / A[i][i]
+                for k in range(i+1):
+                    A[j][k] = A[j][k] - factor * A[i][k]
+        return Matrix(A), swaps
+        
+    def det(self):
+        """
+        calculul unui determinant
+        """
+        self, swaps=self.toUpper()
+        result=1
+        for i in range(self.row):
+            result*=self.data[i][i]
+        if swaps%2!=0:
+            result*=-1
+        return result
