@@ -97,7 +97,8 @@ class Matrix:
             for i in range(n)
         ]
         return Matrix(result)
- def toUpper(self):
+        
+    def toUpper(self):
         """
         Returneaza matricea superior triunghiulara
         """
