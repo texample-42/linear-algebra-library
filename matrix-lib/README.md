@@ -11,14 +11,15 @@ Proiect educațional realizat ca exercițiu practic pentru cursurile de **Algebr
 - ✅ Înmulțire matricială
 - ✅ Urma matricii
 - ✅ Matrici identitate
+- ✅ Constructia matricii superior triunghiulare
 - ⚙️ Verificări pentru dimensiuni compatibile
 
 ---
 
 ## 😶‍🌫️În curând...
 -Înmulțire matrice-vector
--Transpunere matrice
 -Calcul rang matrice
+-Matrici inferior triunghiulare
 
 -Descompunere LU
 -Descompunere QR
