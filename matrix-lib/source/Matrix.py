@@ -97,8 +97,12 @@ class Matrix:
             for i in range(n)
         ]
         return Matrix(result)
-
-     #se copie matricea initiala
+ def toUpper(self):
+        """
+        Returneaza matricea superior triunghiulara
+        """
+        A=[row[:] for row in self.data]
+        #se copie matricea initiala
         for i in range(self.row):
             if A[i][i]==0:
                 #tratam cazul daca pivotul este 0
