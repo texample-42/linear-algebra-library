@@ -28,3 +28,13 @@ def test_trace():
     A = Matrix([[1, 2, 3], [2, 3, 4], [4, 5, 6]])
     B=A.toUpper()
     assert B.data==[[1, 2, 3,],[0.0, -1.0, -2.0],[0.0, 0.0, 0.0]]
+    
+def test_Lower():
+    A=Matrix([[2, 4, 6],[1, 3, 5],[4, 8, 10]])
+    B=A.toLower()
+    assert B.data==[[0.3999999999999999,0.0,0.0],[-1.0, -1.0, 0.0],[4, 8, 10]]
+
+def test_det():
+    A = Matrix([[2, 4, 6], [1, 3, 5], [4, 8, 10]])
+    B=A.det()
+    assert B==-4
