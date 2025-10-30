@@ -6,12 +6,13 @@ Proiect educațional realizat ca exercițiu practic pentru cursurile de **Algebr
 ---
 
 ## 🚀 Funcționalități
-- ✅ Adunare/Scîdere de matrici
+- ✅ Adunare/Scădere de matrici
 - ✅ Transpusă
 - ✅ Înmulțire matricială
 - ✅ Urma matricii
 - ✅ Matrici identitate
-- ✅ Constructia matricii superior triunghiulare
+- ✅ Constructia matricii superior/inferior triunghiulare
+- ✅ Calculul determinantului (posibil nu foarte performant)
 - ⚙️ Verificări pentru dimensiuni compatibile
 
 ---
