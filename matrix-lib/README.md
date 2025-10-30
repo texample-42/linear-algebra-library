@@ -36,7 +36,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🧠 Exemple
 ```python
-from src.matrix import Matrix
+from Matrix import Matrix
 
 A = Matrix([[1,2],[3,4]])
 B = Matrix([[5,6],[7,8]])
