@@ -97,3 +97,22 @@ class Matrix:
             for i in range(n)
         ]
         return Matrix(result)
+
+     #se copie matricea initiala
+        for i in range(self.row):
+            if A[i][i]==0:
+                #tratam cazul daca pivotul este 0
+                for k in range(i+1,self.row):
+                    #cautam un pivot diferit de 0 ca sa interschimbam liniile
+                    if A[k][i]!=0:
+                        A[i],A[k]=A[k],A[i]
+                        break
+                else:
+                    continue
+
+            for j in range(i+1,self.row):
+                #facem reducerea pe termeni
+                factor=A[j][i]/A[i][i]
+                for k in range(i,self.cols):
+                    A[j][k]=A[j][k]-factor*A[i][k]
+        return Matrix(A)
