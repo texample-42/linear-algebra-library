@@ -32,5 +32,14 @@ print(A.trace())
 print("\nMatrice identitate de dimensiune c")
 print(Matrix.identity(c))
 
-print("\nMatrice triunghiulara superioara A")
-print(A.toUpper())
+print("\nMatrice superior triunghiulara  A")
+print(A.toUpper()[0])
+#retruneaza si numarul de interschimbari daca le face intrun singur tuplu
+#si doar accesez elementul care ma intereseaza
+#e comod pentru calcularea determinantului
+
+print("\nMatrice inferior triunghiulara  A")
+print(A.toLower()[0])
+
+print("\nDeterminantul matricii A")
+print(d.det())
