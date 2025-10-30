@@ -24,3 +24,7 @@ def test_trace():
     A = Matrix([[1, 2], [3, 4]])
     B=A.trace()
     assert B==5
+    def test_Upper():
+    A = Matrix([[1, 2, 3], [2, 3, 4], [4, 5, 6]])
+    B=A.toUpper()
+    assert B.data==[[1, 2, 3,],[0.0, -1.0, -2.0],[0.0, 0.0, 0.0]]
