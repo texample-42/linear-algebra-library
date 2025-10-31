@@ -17,7 +17,7 @@ Proiect educațional realizat ca exercițiu practic pentru cursurile de **Algebr
 
 ---
 
-## 😶‍🌫️În curând...
+## 😶‍🌫️În curând...1
 -Înmulțire matrice-vector
 -Calcul rang matrice
 -Matrici inferior triunghiulare
